@@ -17,6 +17,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
 
 ul {
@@ -56,10 +57,17 @@ a img {
 
 }
 
-.logo > a{
+.logo {
     
-    padding: 30px;
-    background-color: yellow;
+
+    height: 100p%;
+    width: 100%;
+
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
 }
 
 /* Accueil */

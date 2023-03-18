@@ -1,0 +1,147 @@
+/******************** SLIDER *****************/
+.slides-container {
+
+    height: 500px;
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+.slide-details {
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 350px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+
+}
+
+/*placement de la description */
+
+#slide_1 {
+    top: 76%;
+    left: 50%;
+
+}
+
+#slide_2 {
+    top: 45%;
+    right: 0%;
+
+}
+
+#slide_3 {
+    top: 30%;
+    left: 20%
+}
+
+#slide_4 {
+    top: 60%;
+    right: 10%;
+}
+
+#slide_5 {
+    top: 50%;
+    right: -5%;
+}
+
+#slide_6 {
+    top: 50%;
+    left: 25%;
+}
+
+#slide_7 {
+    top: 50%;
+    left: 20%;
+}
+
+#slide_8 {
+
+    top: 50%;
+    right: 0%;
+}
+
+.slide-decription {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.slide-image {
+
+    width: 60%;
+    margin: auto;
+}
+
+.slide-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+/* boutons de selections  */
+.buttons {
+    
+    cursor: pointer;
+    top: 40%;
+    width: 100%;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+   user-select: none;  
+  
+ }
+
+#next {
+    position: absolute; 
+    right: 4%;
+    top: 40%;
+    color: rgb(131, 8, 8);
+    font-size: larger;
+   
+}
+#prev {
+    position: absolute; 
+    top:40%;
+    color: rgb(131, 8, 8);
+    font-size: larger;
+}
+
+#prev:hover,
+#next:hover {
+      color: white;
+}
+
+/* selection boutons bottom */
+.dots {
+    position: absolute;
+    bottom: 0;
+    left: calc(100% - 50%);
+    transform: translate(-50%, -50%);
+
+
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(117, 117, 117);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+.dot:hover {
+    background-color: rgb(131, 8, 8);
+}
+
+.dots span.active {
+    background-color: rgb(131, 8, 8);
+    border: 0.1px solid white;
+}

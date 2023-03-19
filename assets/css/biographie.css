@@ -1,0 +1,48 @@
+
+
+
+
+table{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border: 2px solid white;
+    margin: 0;
+     border-collapse: collapse;
+     width: 25%;
+     text-align: center;
+
+
+}
+caption{
+    font-size: 1.5em;
+    background-color: white;
+    color: black;
+}
+thead{
+    display: flex;
+padding-left: 15%;
+   
+ }
+
+
+td{
+    border: 2px solid white;
+    padding: 10px;
+
+  
+ }
+
+
+
+.slide-table{
+display: none;
+height: 150px;
+width: 200px;
+
+
+  }
+
+.biography {
+    display: flex;
+}

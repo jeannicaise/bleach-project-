@@ -1,10 +1,17 @@
 /******************** SLIDER *****************/
 .slides-container {
 
-    height: 500px;
+    height: auto;
     width: 80%;
     position: relative;
+    overflow: hidden;
     margin: auto;
+}
+
+.slide-box{
+    
+    object-fit: fill;
+
 }
 
 .slide-details {
@@ -20,7 +27,14 @@
 }
 
 /*placement de la description */
+img {
 
+ height: 500px;
+width: auto ; 
+
+
+
+}
 #slide_1 {
     top: 76%;
     left: 50%;
@@ -64,7 +78,7 @@
     right: 0%;
 }
 
-.slide-decription {
+.slide-description {
     font-size: 1rem;
     margin: 10px 0;
 }
@@ -145,3 +159,85 @@
     background-color: rgb(131, 8, 8);
     border: 0.1px solid white;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile device */
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px){
+
+.transformation {
+
+height:800px;
+
+    }
+
+.slides-container {
+height: 275px;
+width: 300px;
+
+ }     
+    
+.carrousel-image{
+height: 100% ;
+width: 100%; 
+position: absolute;
+left:0;
+right: 0;
+}
+
+.slide-details{
+  
+display: none;
+ }
+
+#prev {
+    position: absolute; 
+    top:40%;
+    left: 0%;
+    color:white;
+    background-color: rgb(131, 8, 8) ;
+    font-size: larger;
+
+
+}
+#next {
+    position: absolute; 
+    right: 0%;
+    top: 40%;
+    color:white;
+    background-color: rgb(131, 8, 8) ;
+    font-size: larger;
+   
+}
+#dots {
+    display: none;
+    /* position: absolute;
+    bottom: -15%;
+    width: 150px;
+    background-color: yellow; */
+ 
+
+}
+
+}
+

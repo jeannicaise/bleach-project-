@@ -10,6 +10,10 @@
     
 } 
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
     color: #fff; 
@@ -88,6 +92,10 @@ footer {
     padding-top: 15px;
     padding-left: 30px;
     margin-top: 20px;
+}
+
+#scrollTopButton {
+    
 }
 
 

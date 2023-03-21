@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue&family=Roboto+Condensed&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,9 +13,7 @@
 body {
     background-color: black;
     color: #fff; 
-    font-family: 'Bangers', cursive;
     font-size: 1.2em;
-    font-family: "Noto Serif JP";
 }
 
 /* barre de navigation desktop */
@@ -24,19 +24,23 @@ body {
     height: 80px;
     justify-content: center;
     align-items: center;
+
 }
 
 .navbar ul {
     display: flex;
+    
 }
 
 .navbar ul li a {
-    display: block;
+    display: inline-block;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: bold;
     margin: 20px;
-}
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+  }
 
 .navbar ul li a:hover {
     color: #7E161A;
@@ -47,7 +51,7 @@ body {
     position: absolute;
     height: 60px;
     width: 60px;
-    left: 50px;
+    left: 40px;
     top: 10px
 }
 
@@ -65,7 +69,10 @@ body {
     margin-bottom: 20px;
 }
 
+h1, h2 {
+    font-family: 'Bangers', cursive;
 
+}
 section {
     width: 80%;
     margin: auto;
@@ -126,13 +133,13 @@ footer {
     
     .navbar ul {
         flex-direction: column;
-        align-items: center;
-        
+        align-items: center;  
     }
     
     .navbar ul li a {
         display: block;
-        padding: 1.5rem;
+        padding: 1rem;
+        text-shadow: 2px 2px 2px black;
     }
     
     .navbar .menuBurger {

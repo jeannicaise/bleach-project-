@@ -9,13 +9,19 @@ burger.addEventListener("click", function () {
 // - navLinks se ferme 
 // - on se dirige directement vers la section souhaitée
 
-const accueil = document.querySelector("#home")
-const bio = document.querySelector("#bio")
-const technic = document.querySelector("#technic")
-const trans = document.querySelector("#trans")
-const questions = document.querySelector("#questions")
-const menuMobile = document.querySelector(".menu-mobile") 
+const menuMobile = document.getElementsByClassName(".navLinks.menu-mobile")
 
-accueil.addEventListener("click", function () {
-    console.log("ok");
-})
+// si je clique sur un li => navLinks se ferme (remove menu-mobile)
+
+const menuItems = document.querySelectorAll(".menuItems")
+
+function menuHidden() {
+    if (navLinks.classList.contains("menu-mobile"))
+    navLinks.classList.remove("menu-mobile")
+}
+
+menuItems.forEach(
+    function (menuItems) {
+        menuItems.addEventListener("click", menuHidden)
+    }
+)

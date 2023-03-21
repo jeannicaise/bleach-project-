@@ -1,17 +1,15 @@
 /******************** SLIDER *****************/
-.slides-container {
-
-    height: auto;
-    width: 80%;
-    position: relative;
-    overflow: hidden;
-    margin: auto;
+body{
+    background-color: black;
 }
 
-.slide-box{
-    
-    object-fit: fill;
+.slides-container {
 
+padding: 20px;
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+     box-shadow: 0 0 14px rgb(131, 8, 8); 
 }
 
 .slide-details {
@@ -27,14 +25,7 @@
 }
 
 /*placement de la description */
-img {
 
- height: 500px;
-width: auto ; 
-
-
-
-}
 #slide_1 {
     top: 76%;
     left: 50%;
@@ -78,7 +69,7 @@ width: auto ;
     right: 0%;
 }
 
-.slide-description {
+.slide-decription {
     font-size: 1rem;
     margin: 10px 0;
 }
@@ -96,39 +87,48 @@ width: auto ;
 
 
 /* boutons de selections  */
-.buttons {
+.button {
     
+    position: absolute;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
-    top: 40%;
-    width: 100%;
-    padding: 16px;
-    font-weight: bold;
-    font-size: 30px;
-    transition: 0.6s ease;
-   user-select: none;  
-  
+    top:45%;
+ 
+ 
  }
 
 #next {
-    position: absolute; 
-    right: 4%;
-    top: 40%;
-    color: rgb(131, 8, 8);
-    font-size: larger;
-   
+  
+    right:0;
+    opacity: 0.8;
+    transform:rotate(0deg);
+    transition:all 0.3s ease;
+    border-radius: 50%;
 }
 #prev {
-    position: absolute; 
-    top:40%;
-    color: rgb(131, 8, 8);
-    font-size: larger;
+    left:0;
+    opacity: 0.8;
+    transform:rotate(180deg);
+    transition:all 0.3s ease;
+    border-radius: 50%;
+
 }
 
-#prev:hover,
-#next:hover {
-      color: white;
-}
-
+#prev:hover{
+    transform:rotate(540deg) scale(1.1);
+    opacity: 1;
+    transition:all 0.3s ease;
+    border-radius: 50%;
+    }
+    
+    #next:hover{
+        transform:rotate(360deg) scale(1.1);
+        opacity: 1;
+        transition:all 0.3s ease;
+        border-radius: 50%;
+    }
+    
 /* selection boutons bottom */
 .dots {
     position: absolute;
@@ -159,85 +159,3 @@ width: auto ;
     background-color: rgb(131, 8, 8);
     border: 0.1px solid white;
 }
-
-
-
-
-
-
-
-
-
-
-
-/* Mobile device */
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 400px){
-
-.transformation {
-
-height:800px;
-
-    }
-
-.slides-container {
-height: 275px;
-width: 300px;
-
- }     
-    
-.carrousel-image{
-height: 100% ;
-width: 100%; 
-position: absolute;
-left:0;
-right: 0;
-}
-
-.slide-details{
-  
-display: none;
- }
-
-#prev {
-    position: absolute; 
-    top:40%;
-    left: 0%;
-    color:white;
-    background-color: rgb(131, 8, 8) ;
-    font-size: larger;
-
-
-}
-#next {
-    position: absolute; 
-    right: 0%;
-    top: 40%;
-    color:white;
-    background-color: rgb(131, 8, 8) ;
-    font-size: larger;
-   
-}
-#dots {
-    display: none;
-    /* position: absolute;
-    bottom: -15%;
-    width: 150px;
-    background-color: yellow; */
- 
-
-}
-
-}
-

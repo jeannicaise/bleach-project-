@@ -5,56 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Bankai</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/CSS/navbar.css">
+    <script src="./assets/JS/navbar.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="#"><img src="/assets/images/logo ichigo.jpg" alt="Logo"></a>
+        <nav class="navbar">
+            <img class="logo" src="/assets/images/logo ichigo.jpg" alt="Logo">
+            <div class="navLinks">
+                <ul>
+                    <li class="menuItems"><a href="#banner">Accueil</a></li>
+                    <li class="menuItems"><a href="#bio">Biographie</a></li>
+                    <li class="menuItems"><a href="#technic">Techniques</a></li>
+                    <li class="menuItems"><a href="#trans">Transformations</a></li>
+                    <li class="menuItems"><a href="#questions">Quiz</a></li>
+                </ul>
             </div>
-            <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">À propos</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-            </ul>
+            <img src="./assets/images/menuburger.JPG" alt="menuBurger" class="menuBurger">
         </nav>
         <div id="banner"></div>
+
     </header>
+
     <main>
-        <section class="accueil">
+        <section id="home">
             <h1> Accueil</h1>
             <p>Ichigo est reconnaissable à ses cheveux orange coiffés en pétards, source de moqueries pendant l'enfance. Assez grand, mince, il arbore une peau claire et des yeux marrons. Côté vestimentaire, sa préférence est aux tissus serrés, si possible décorés de son nombre fétiche </p>
         </section>
 
-        <section class="biographie">
-           <h2>Biographie</h2>
+        <section id="bio">
+           <h2 class="biographie">Biographie</h2>
            <p> Ichigo Kurosaki (黒崎 一護, Kurosaki Ichigo) 
             est un Humain qui a la faculté Rukia Kuchiki, qui lui transfère ses pouvoirs de Shinigami afin de sauver sa famille de l'attaque d'un Hollow. Ichigo est le protagoniste principal du manga Bleach.</p> 
         </section>
-        <section class="techniques">
-            <h2>Techniques</h2>
-            <p> Ichigo est reconnaissable à ses cheveux orange coiffés en pétards, source de moqueries pendant l'enfance. Assez grand, mince, il arbore une peau claire et des yeux marrons. Côté vestimentaire,</p>
-            <p> Ichigo est reconnaissable à ses cheveux orange coiffés en pétards, source de moqueries pendant l'enfance. Assez grand, mince, il arbore une peau claire et des yeux marrons. Côté vestimentaire,</p>
-            <p> Ichigo est reconnaissable à ses cheveux orange coiffés en pétards, source de moqueries pendant l'enfance. Assez grand, mince, il arbore une peau claire et des yeux marrons. Côté vestimentaire,</p>
 
+        <section id="technic">
+            <h2 class="techniques">Techniques</h2>
+            <p> Ichigo est reconnaissable à ses cheveux orange coiffés en pétards, source de moqueries pendant l'enfance. Assez grand, mince, il arbore une peau claire et des yeux marrons. Côté vestimentaire,</p>
+            <p> Ichigo est reconnaissable à ses cheveux orange coiffés en pétards, source de moqueries pendant l'enfance. Assez grand, mince, il arbore une peau claire et des yeux marrons. Côté vestimentaire,</p>
+            <p> Ichigo est reconnaissable à ses cheveux orange coiffés en pétards, source de moqueries pendant l'enfance. Assez grand, mince, il arbore une peau claire et des yeux marrons. Côté vestimentaire,</p>
         </section>
-        <section class="transformation">
-            <h2>Transformations</h2>
+        <section id="trans">
+            <h2 class="transformations">Transformations</h2>
             <!-- carrousel + description -->
         </section>
 
-        <section class="Quiz">
-            <h2>Quiz</h2>
+        <section id="questions">
+            <h2 class="Quiz">Quiz</h2>
             <!-- faire un quiz qui dechire  -->
         </section>
 
     </main>
 
-    <footer> &#169 Team Bankai </footer>
+    <footer>&#169 Team Bankai</footer>
 
-    <script src="./main.js"></script>
     
 </body>
 </html>

@@ -1,6 +1,6 @@
 
 window.addEventListener('load', () => {
-    setupListeners();
+    buttonlistener();
     initSlider();
 }) 
 
@@ -12,7 +12,7 @@ var prev = document.getElementById("prev")
 var next = document.getElementById("next")
 
  //--------- fonction contenant les évènements des boutons "next" et "previous" -------------
-var listenerFunctions = {
+var buttonFonction = {
     prevSlide: () => {
         let index = slideIndex - 1
         showSlide(index)
@@ -23,10 +23,10 @@ var listenerFunctions = {
     },
 } 
 // ------------------on active les boutons avec les methodes de la fonction précédente---------------
-let setupListeners = () => {
+let buttonlistener = () => {
 
-     prev.addEventListener('click', listenerFunctions.prevSlide);
-     next.addEventListener('click', listenerFunctions.nextSlide);
+     prev.addEventListener('click', buttonFonction.prevSlide);
+     next.addEventListener('click', buttonFonction.nextSlide);
 };
 
 //-------------- cacher l'ensemble des slides sauf la 1ère ( à partir de l'index 1)-------------

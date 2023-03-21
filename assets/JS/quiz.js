@@ -3,7 +3,7 @@ window.onload = () =>{
     setupListeners()
 }
 
-var listenerFunctions = {
+let listenerFunctions = {
  
     showAccordeonContent: (ev) =>{
         let element = ev.target;

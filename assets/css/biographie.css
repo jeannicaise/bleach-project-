@@ -6,7 +6,7 @@ table{
     display: flex;
     flex-direction: column;
     color: white;
-    border: 2px solid white;
+    border: 2px solid rgb(142, 142, 142);
     margin: 0;
      border-collapse: collapse;
      width: 25%;
@@ -15,34 +15,38 @@ table{
 
 }
 caption{
-    font-size: 1.5em;
-    background-color: white;
+    font-size: 1.4em;
+    background-color: rgba(146, 146, 146, 0.591);
     color: black;
 }
 thead{
     display: flex;
 padding-left: 15%;
+margin-top: 5px;
    
  }
 
 
 td{
-    border: 2px solid white;
+    border: 0.5px solid rgb(146, 146, 146);
     padding: 10px;
-
-  
- }
+}
 
 
 
 .slide-table{
 display: none;
 height: 150px;
-width: 200px;
+width: 175px;
 
 
   }
 
 .biography {
     display: flex;
+    margin-top: 20px;
+}
+
+.Biography-description{
+    margin-left: 30px;
 }

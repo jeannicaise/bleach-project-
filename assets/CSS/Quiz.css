@@ -1,0 +1,114 @@
+
+/* STYLE QUIZ */
+
+/* MISE EN FORME ACCORDEON */
+.accordeon-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.accordeon-item{
+    cursor: pointer;
+}
+.accordeon-title{
+    background-color: #efefef;
+    margin: 5px 0;
+    padding: 10px;
+}
+.accordeon-title h2::after {
+    content: '\02795';
+    float: right;
+}
+.accordeon-item.active .accordeon-title h2::after {
+    content: '\02796';
+    float: right;
+}
+.accordeon-item.active .accordeon-title{
+    background-color: red;
+    color: white;
+}
+
+.accordeon-content{
+    background-color: beige;
+    display: none;
+}
+
+/* REPONSE ET RESULTAT*/
+
+label
+{
+    /* arrière plan des réponses */
+    background-color: rgb(97, 142, 142);
+    padding: 10px;
+    margin-bottom: 5px;
+   text-decoration: none;
+   list-style: none;
+   display: block;
+   color:white;
+   font-size: 1.30rem;
+   
+}
+
+
+#buttonScore
+{
+    /* boutton qui donne le score */
+    background-color: rgb(156, 81, 54);
+    color: white;
+    font-size: 1.30rem;
+}
+
+.quiz_form
+{
+    /* cache les boutons radio */
+    opacity: 0;
+    position: absolute;
+}
+
+
+label:hover 
+{
+    background-color: coral;
+    /* colore l'arrière plan quand la souris passe dessus */
+}
+
+
+.affiche
+{
+    display: flex;
+}
+
+.bonne, .bonneQ2{
+    /* Affiche bonne réponse lorsque réponse juste */
+    background-color:rgba(63, 101, 25, 0.824);
+    color: white; 
+    display: none;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 10rem;
+}
+
+.mauvaise, .mauvaiseQ2
+{
+     /* Affiche mauvaise réponse lorsque réponse fausse */
+    background-color: rgb(160, 25, 25);
+    color: white;
+    display: none;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 10rem;
+}
+
+/* images Quiz */
+.quizImage
+{
+    width:372px;
+    height:280px;
+     border:0 px;
+}
+    
+/* Boutton pour connaitre le score */
+#score
+{
+    font-weight: bold;
+    font-size: 2rem;
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue&family=Roboto+Condensed&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #fff; 
+    
+} 
+
+body {
+    background-color: black;
+    color: #fff; 
+    font-size: 1.2em;
+}
+
+/* barre de navigation desktop */
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar ul {
+    display: flex;
+    
+}
+
+.navbar ul li a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px;
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+  }
+
+.navbar ul li a:hover {
+    color: #7E161A;
+    transition: .3s;
+}
+
+.navbar .logo {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    left: 40px;
+    top: 10px
+}
+
+ .navbar .menuBurger {
+    display: none;
+}
+
+
+#banner {
+    background-image: url(/assets/images/banniere_.png);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    font-family: 'Bangers', cursive;
+
+}
+section {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background: #7E161A;
+    padding-top: 15px;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+
+
+@media screen and (max-width: 460px) {        
+    .navbar {
+        width: 100%;
+        height: 60px;
+        display: flex;
+    }
+    
+    .navbar .menuBurger {
+        display: initial;
+    }
+    
+    .navbar .logo {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 15px;
+        left: 30px;
+    }
+    
+    .navLinks {   
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-image: url(/assets/images/BG_menu_burger.png);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    
+    .navLinks.menu-mobile {
+        margin-left: 0;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;  
+    }
+    
+    .navbar ul li a {
+        display: block;
+        padding: 1rem;
+        text-shadow: 2px 2px 2px black;
+    }
+    
+    .navbar .menuBurger {
+        position: absolute;
+        right: 30px;
+        top: 15px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    #banner {
+        background-image: url(/assets/images/banniere_.png);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+}

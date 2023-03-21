@@ -36,7 +36,7 @@ let hideSlide = () => {
         const slide = slides[i];
         slide.style.display = "none"
     }
-}S
+}
 
 let initSlider = () => {
     hideSlide()

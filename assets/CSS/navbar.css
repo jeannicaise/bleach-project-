@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&family=Noto+Sans+Mono:wght@300&family=Signika+Negative:wght@300;700&family=Signika:wght@300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/dimbo');
+
 
 * {
     box-sizing: border-box;
@@ -18,6 +20,7 @@ body {
     background-color: black;
     color: #fff; 
     font-size: 1.2em;
+    font-family: 'Signika Negative', sans-serif;
 }
 
 /* barre de navigation desktop */
@@ -40,7 +43,7 @@ body {
     font-size: 16px;
     font-weight: bold;
     margin: 20px;
-    font-family: 'Bangers', cursive;
+    font-family: 'Dimbo', sans-serif;
     font-size: 2rem;
   }
 
@@ -72,7 +75,7 @@ body {
 }
 
 h1, h2 , footer{
-    font-family: 'Bangers', cursive;
+    font-family: 'Dimbo', sans-serif;
 }
 
 section {
@@ -101,7 +104,7 @@ footer {
     border: solid #7E161A;    
     background-color: black;
     color: white;
-    font-family: 'Bangers', cursive;
+    font-family: 'Dimbo', sans-serif;
     font-size: 2rem;
     font-weight: bolder;
     align-items: center;

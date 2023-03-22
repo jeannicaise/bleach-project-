@@ -1,0 +1,63 @@
+table{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border: 2px solid rgb(142, 142, 142);
+    margin: 0;
+     border-collapse: collapse;
+     width: 429px;
+     height: 100%;
+     text-align: center;
+
+
+}
+caption{
+    font-size: 1.4em;
+    background-color: rgba(146, 146, 146, 0.591);
+    color: black;
+}
+thead{
+    display: flex;
+padding-left: 27%;
+padding-right: 23%;
+margin-top: 5px;
+
+   
+ }
+
+
+td{
+    border: 0.5px solid rgb(146, 146, 146);
+    padding: 10px;
+}
+
+
+
+.slide-table{
+
+height: 150px;
+width: 150px;
+
+
+
+  }
+
+.biography {
+    display: flex;
+    margin-top: 10px;
+}
+
+.Biography-description{
+    margin-left: 30px;
+    padding-left: 30px;
+}
+
+@media only screen and (max-width:400px) {
+ .biography{
+    display: flex;
+    flex-direction: column;
+ }
+ .table{
+    display: flex;
+ }
+ }

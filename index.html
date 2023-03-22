@@ -15,11 +15,12 @@
 
 <body>
     <header>
+        <div id="topPage"></div>
         <nav class="navbar">
             <img class="logo" src="./assets/images/logo2.png" alt="Logo">
             <div class="navLinks">
                 <ul>
-                    <li class="menuItems"><a href="#banner">Accueil</a></li>
+                    <li class="menuItems"><a href="#home">Accueil</a></li>
                     <li class="menuItems"><a href="#bio">Biographie</a></li>
                     <li class="menuItems"><a href="#technic">Techniques</a></li>
                     <li class="menuItems"><a href="#trans">Transformations</a></li>
@@ -32,8 +33,8 @@
     </header>
     <main>
         <!-- Partie Acceuil -->
-        <section id="home">
-            <h1> Accueil</h1>
+        <section >
+            <h1 id="home"> Accueil</h1>
             <p>Ichigo est reconnaissable à ses cheveux orange coiffés en pétards, source de moqueries pendant l'enfance.
                 Assez grand, mince, il arbore une peau claire et des yeux marrons. Côté vestimentaire, sa préférence est
                 aux tissus serrés, si possible décorés de son nombre fétiche </p>
@@ -691,7 +692,10 @@
 
     </main>
 
-    <footer>&#169 Team Bankai</footer>
+    <footer>&#169 Team Bankai 
+        <button id="hiddenButton"><a href="#topPage">Top</a></button>
+    </footer>
+
     <script src="./assets/JS/navbar.js"></script>
     <script src="./assets/JS/biographie.js"></script>
     <script src="./assets/JS/carrousel.js"></script>

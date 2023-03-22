@@ -1,150 +1,96 @@
-// PARTIE QUIZ
-window.onload = () =>{
-    setupListeners()
-}
 
-let listenerFunctions = {
- 
-    showAccordeonContent: (ev) =>{
-        let element = ev.target;
-        if(element.className){
-            // accordeon-title
-            if(element.className === "accordeon-title")
-            {
-                element = element.parentNode
-            }
-        }else{
-            // H2
-            element = (element.parentNode).parentNode
-        }
-        var accordeon_content = element.children[1]
-        if(window.getComputedStyle(accordeon_content).display){
-           
-            if( window.getComputedStyle(accordeon_content).display == "block"){
-                accordeon_content.style.display = "none"
-            }else{
-                accordeon_content.style.display = "block"
-            }
-            
-        }else{
-            accordeon_content.style.display = "block"
-        }
-        element.classList.toggle('active')
-    }
-}
+const answers = document.getElementsByName("answerQuiz1");
+for (let i = 0; i < answers.length; i++) {
+	answers[i].addEventListener("click", function() {
+		for (let j = 0; j < answers.length; j++) {
+			if (j != i) {
+				answers[j].disabled = true;
 
-//  Fonction qui réalise les abonnements 
-const setupListeners = () => {
-
-    const accordeon_items = document.querySelectorAll('.accordeon-item')
-
-    for (let index = 0; index < accordeon_items.length; index++) {
-        const accordeon_item = accordeon_items[index];
-        accordeon_item.onclick = listenerFunctions.showAccordeonContent
-        
-    }
+			}
+		}
+	});
 }
 
 
-function analyseScore(monScore)
-{
-    const afficheGood = document.querySelector('.bonne') 
-    const afficheBad = document.querySelector('.mauvaise') 
-    const quiz1 = document.querySelectorAll('.quiz1')
+const answersQuiz2 = document.getElementsByName("answerQuiz2");
+for (let i = 0; i < answersQuiz2.length; i++) {
+	answersQuiz2[i].addEventListener("click", function() {
+		for (let j = 0; j < answersQuiz2.length; j++) {
+			if (j != i) {
+				answersQuiz2[j].disabled = true;
 
-            if (monScore == "a" ){
-                    quiz1[0].style.backgroundColor = "red";
-                    quiz1[1].style.backgroundColor = "green";
-                    afficheBad.style.display = "block";
-                    
-                }
+			}
+		}
+	});
+}
 
-            if (monScore == "b") {
-                quiz1[1].style.backgroundColor = "green";
-                afficheGood.style.display = "block";} 
+const answerQuiz3 = document.getElementsByName("answerQuiz3");
+for (let i = 0; i < answerQuiz3.length; i++) {
+	answerQuiz3[i].addEventListener("click", function() {
+		for (let j = 0; j < answerQuiz3.length; j++) {
+			if (j != i) {
+				answerQuiz3[j].disabled = true;
 
-            if (monScore == "c" ){
-                    quiz1[2].style.backgroundColor = "red";
-                    quiz1[1].style.backgroundColor = "green";
-                    afficheBad.style.display = "block";} 
-    };
+			}
+		}
+	});
+}
 
+const answerQuiz4 = document.getElementsByName("answerQuiz4");
+for (let i = 0; i < answerQuiz4.length; i++) {
+	answerQuiz4[i].addEventListener("click", function() {
+		for (let j = 0; j < answerQuiz4.length; j++) {
+			if (j != i) {
+				answerQuiz4[j].disabled = true;
 
-function analyseScore2(monScore2) {
-const afficheGood = document.querySelector('.bonneQ2') 
-const afficheBad = document.querySelector('.mauvaiseQ2') 
-const quiz2 = document.querySelectorAll('.quiz2')
-              // Question 2
+			}
+		}
+	});
+}
 
-        if (monScore2 == "a" ){
-            quiz2[0].style.backgroundColor = "green"
-            afficheGood.style.display = "block"}
-    
-     if (monScore2 == "b") {
-        quiz2[1].style.backgroundColor = "red";
-        quiz2[0].style.backgroundColor = "green";
-        afficheBad.style.display = "block";} 
-    
-     if (monScore2 == "c" ){
-            quiz2[2].style.backgroundColor = "red";
-            quiz2[0].style.backgroundColor = "green";
-            afficheBad.style.display = "block";} 
-        };
-    
+const answerQuiz5 = document.getElementsByName("answerQuiz5");
+for (let i = 0; i < answerQuiz5.length; i++) {
+	answerQuiz5[i].addEventListener("click", function() {
+		for (let j = 0; j < answerQuiz5.length; j++) {
+			if (j != i) {
+				answerQuiz5[j].disabled = true;
 
-// Audio sur le boutton score
-const audio = new Audio("https://www.myinstants.com/media/sounds/bankai3-0.mp3");
-
-const buttons = document.querySelector("#buttonScore");
-
-  buttons.addEventListener("click", () => {
-    audio.play(); });
+			}
+		}
+	});
+}
 
 // Calcul du score 
 
 function calculScore() {
     var score = 0;
-    var q1 = document.querySelector('input[name="q1"]:checked').value;
-    var q2 = document.querySelector('input[name="q2"]:checked').value;
-    var q3 = document.querySelector('input[name="q3"]:checked').value;
-    var q4 = document.querySelector('input[name="q4"]:checked').value;
-    var q5 = document.querySelector('input[name="q5"]:checked').value;
-    var q6 = document.querySelector('input[name="q6"]:checked').value;
-    var q7 = document.querySelector('input[name="q7"]:checked').value;
-    var q8 = document.querySelector('input[name="q8"]:checked').value;
-    var q9 = document.querySelector('input[name="q9"]:checked').value;
-    var q10 = document.querySelector('input[name="q10"]:checked').value;
+    var q1 = document.querySelector('input[name="answerQuiz1"]:checked').value;
+    var q2 = document.querySelector('input[name="answerQuiz2"]:checked').value;
+    var q3 = document.querySelector('input[name="answerQuiz3"]:checked').value;
+    var q4 = document.querySelector('input[name="answerQuiz4"]:checked').value;
+    var q5 = document.querySelector('input[name="answerQuiz5"]:checked').value;
 
-
-    if (q1 == "b") {
+    if (q1 == "a") {
         score += 1;
     }
     if (q2 == "a") {
         score += 1;
     }
-    if (q3 == "a") {
+    if (q3 == "c") {
         score += 1;
     }
     if (q4 == "c") {
         score += 1;
     }
-    if (q5 == "c") {
+    if (q5 == "b") {
         score += 1;
     }
-    if (q6 == "a") {
-        score += 1;
-    }
-    if (q7 == "b") {
-        score += 1;
-    }
-    if (q8 == "a") {
-        score += 1;
-    }
-    if (q9 == "b") {
-        score += 1;
-    }
-    if (q10 == "b") {
-        score += 1;
-    }
-    document.getElementById("score").innerHTML = "Score: " + score + " /10";
+   
+    document.getElementById("score").innerHTML = "Score: " + score + " /5";
 }
+
+// Audio sur le boutton score
+
+const buttons = document.querySelector("#buttonScore");
+const audio = new Audio("https://www.myinstants.com/media/sounds/bankai3-0.mp3");
+buttons.addEventListener("click", () => { audio.play(); });

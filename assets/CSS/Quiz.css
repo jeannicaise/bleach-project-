@@ -1,42 +1,49 @@
 
-/* STYLE QUIZ */
+/* MISE EN FORME QUIZ */
 
-/* MISE EN FORME ACCORDEON */
-.accordeon-container{
-    width: 80%;
-    margin: 0 auto;
+.quiz-container{
+  
+     box-shadow: 0 0 14px rgb(131, 8, 8); 
+     margin: 20px auto;
+	width: 80%;
+	max-width: 800px;
+	text-align: center;
+
 }
-.accordeon-item{
-    cursor: pointer;
-}
-.accordeon-title{
-    background-color: #efefef;
+
+.quiz-title{
+    
     margin: 5px 0;
     padding: 10px;
+    text-align: center;
 }
-.accordeon-title h2::after {
+.quiz-title h2::after {
     content: '\02795';
     float: right;
 }
-.accordeon-item.active .accordeon-title h2::after {
-    content: '\02796';
-    float: right;
-}
-.accordeon-item.active .accordeon-title{
-    background-color: red;
+
+.quiz-title{
+    background-color: rgb(17 16 16);
+    font-size: 1.5rem;
     color: white;
 }
 
-.accordeon-content{
-    background-color: beige;
-    display: none;
+.quiz-answers{
+    background-color: rgb(213, 213, 203);
+    display: block;
 }
 
-/* REPONSE ET RESULTAT*/
 
-label
+.quiz-image /* images Quiz */
 {
-    /* arrière plan des réponses */
+    width:372px;
+    height:280px;
+    margin-top: 0.5rem;
+}
+
+label  /* arrière plan des réponses */
+{
+   
     background-color: rgb(97, 142, 142);
     padding: 10px;
     margin-bottom: 5px;
@@ -48,36 +55,80 @@ label
    
 }
 
+/* --------------------Part------------- */
+
+.answers {
+	list-style: none;
+	padding: 0;
+}
+.answers li {
+	display: inline-block;
+	margin: 10px;
+}
+.answers label {
+	display: block;
+	padding: 10px;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.answers input[type="radio"] {
+ display: none;
+}
+.answers input[type="radio"]:checked + label {
+	background-color: #ccc;
+	color: #fff;
+	border-color: #ccc;
+	cursor: default;
+}
+
+
+/* -------------------End--------------- */
+
+
+label:hover   /* colore l'arrière plan quand la souris passe dessus */
+{
+    background-color: rgb(250, 138, 97);    
+}
+
+
+
+
+/* ---------------------Resultat et score --------------------------------  */
+/* paragraphe du score  Score:0/5 */
+.resultat-score
+{
+    display: flex;
+    justify-content: space-around;
+
+}
+#score
+{
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    box-shadow: 0 0 14px rgb(131, 8, 8);
+    padding: 0 10px;
+}
+
 
 #buttonScore
 {
     /* boutton qui donne le score */
-    background-color: rgb(156, 81, 54);
+    background-color: rgb(17 16 16);
     color: white;
-    font-size: 1.30rem;
+    font-size: 2rem;
+    box-shadow: 0 0 14px rgb(131, 8, 8);
+    padding: 0 10px;
 }
 
-.quiz_form
-{
-    /* cache les boutons radio */
-    opacity: 0;
-    position: absolute;
-}
-
-
-label:hover 
-{
-    background-color: coral;
-    /* colore l'arrière plan quand la souris passe dessus */
-}
-
-
+/* ----------------------Afficher resulat clik------------------------ */
 .affiche
 {
     display: flex;
 }
 
-.bonne, .bonneQ2{
+.bonne{
     /* Affiche bonne réponse lorsque réponse juste */
     background-color:rgba(63, 101, 25, 0.824);
     color: white; 
@@ -87,7 +138,7 @@ label:hover
     margin-left: 10rem;
 }
 
-.mauvaise, .mauvaiseQ2
+.mauvaise
 {
      /* Affiche mauvaise réponse lorsque réponse fausse */
     background-color: rgb(160, 25, 25);
@@ -98,17 +149,8 @@ label:hover
     margin-left: 10rem;
 }
 
-/* images Quiz */
-.quizImage
-{
-    width:372px;
-    height:280px;
-     border:0 px;
-}
-    
-/* Boutton pour connaitre le score */
-#score
-{
-    font-weight: bold;
-    font-size: 2rem;
-}
+@media screen and (max-width: 400px) {
+  
+  
+   
+  }

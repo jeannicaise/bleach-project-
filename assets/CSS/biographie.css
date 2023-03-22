@@ -1,52 +1,70 @@
-
-
-
-
-table{
-    display: flex;
-    flex-direction: column;
+.table {
     color: white;
-    border: 2px solid rgb(142, 142, 142);
-    margin: 0;
-     border-collapse: collapse;
-     width: 25%;
-     text-align: center;
+ 
+    border-collapse: collapse;
+    text-align: center;
+    height: 100%;
+    position: relative;
+
 
 
 }
-caption{
+table{
+    border: 2px solid rgb(142, 142, 142);
+}
+
+caption {
     font-size: 1.4em;
     background-color: rgba(146, 146, 146, 0.591);
     color: black;
 }
-thead{
-    display: flex;
-padding-left: 15%;
-margin-top: 5px;
-   
- }
 
-
-td{
-    border: 0.5px solid rgb(146, 146, 146);
-    padding: 10px;
+thead {
+  
 }
 
 
-
-.slide-table{
-display: none;
-height: 150px;
-width: 175px;
+td {
+    border: 0.5px solid rgb(146, 146, 146);
+    padding: 10px;
 
 
-  }
+}
+
+
+.table-images{
+    display: flex;
+    justify-content: center;
+
+}
+
+.slide-table {
+    height: 150px;
+    width: 175px;
+
+}
+
+
+thead td {
+margin-left: 50px;
+position: ;
+
+}
 
 .biography {
     display: flex;
     margin-top: 20px;
 }
 
-.Biography-description{
+.Biography-description {
     margin-left: 30px;
+}
+
+@media screen and (max-width:400px){
+    
+    .biography{
+
+        display: flex;
+        flex-direction: column;
+    }
 }

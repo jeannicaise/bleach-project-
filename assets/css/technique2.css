@@ -1,0 +1,77 @@
+.gif1 {
+    width: 350px ;
+    height: 200px;
+    border-radius: 5%;
+    margin-right: 5%;
+}
+
+.gif2 {
+    width: 400px;
+    height: 275px;
+    border-radius: 15%;
+    margin-left: 5%;
+}
+
+.gif3 {
+    width: 350px ;
+    height: 200px;
+    border-radius: 5%;
+    margin-right: 5%;
+}
+
+.container1{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    
+}
+
+.container2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
+}
+
+.container3{
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.techniques{
+    margin-top: 20px;
+}
+h2{
+    margin: 20px;
+}
+p{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+@media only screen and (max-width:400px) {
+    .container1{
+        display: flex;
+
+        flex-direction: column;
+    } 
+       .container2{
+          display: flex;
+        flex-direction: column;
+
+       }
+       .container3{
+        display: flex;
+           
+           flex-direction: column;
+       }
+       p{
+        text-align: justify;
+        width: 100%;
+       }
+    }
+       
+   

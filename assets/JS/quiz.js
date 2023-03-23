@@ -8,7 +8,9 @@ for (let i = 0; i < answers.length; i++) {
 
 			}
 		}
+		
 	});
+	
 }
 
 

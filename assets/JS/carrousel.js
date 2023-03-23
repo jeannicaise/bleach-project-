@@ -33,16 +33,16 @@ let buttonlistener = () => {
 
 // apparition des boutons lors la souris passe sur le carousel
 
-const carousel = document.querySelector(".slides-container")
-const buttonsCar= document.getElementById("buttons")
+// const carousel = document.querySelector(".slides-container")
+// const buttonsCar= document.getElementById("buttons")
 
-carousel.addEventListener("mouseout", function(){
-    buttonsCar.classList.toggle("hiddenBtn");
-})
+// carousel.addEventListener("mouseout", function(){
+//     buttonsCar.classList.toggle("hiddenBtn");
+// })
 
-carousel.addEventListener("mouseover", function(){
-    buttonsCar.classList.remove("hiddenBtn");
-})
+// carousel.addEventListener("mouseover", function(){
+//     buttonsCar.classList.remove("hiddenBtn");
+// })
 
 
 

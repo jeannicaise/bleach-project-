@@ -151,6 +151,41 @@ label:hover   /* colore l'arrière plan quand la souris passe dessus */
 
 @media screen and (max-width: 400px) {
   
-  
+    #questions{
+        margin-top: 45rem;
+    }
+    #questions p{
+        width: 20rem;
+        text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    }
+
+    .quiz-title{
+
+        font-size: 1.3rem;
+
+    }
+    .quiz-image
+    {
+        width: 100%;
+        height: auto;
+    }
    
+    .quiz-container{
+        width: 100%;
+    }
+   .quiz-text p{
+    width: 100%;
+   }
+
+    #buttonScore
+    {
+        /* boutton qui donne le score */
+    
+        font-size: 1.2rem;
+    
+    }
+    
+
   }

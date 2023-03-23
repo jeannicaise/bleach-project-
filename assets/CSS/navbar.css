@@ -165,7 +165,7 @@ footer {
         top: 0;
         left: 0;
         position: absolute;
-        background-image: url(/assets/images/BG_menu_burger.png);
+        background-image: url("../../assets/images/BG_menu_burger.png");
         background-position: center;
         background-size: cover;
         width: 100%;

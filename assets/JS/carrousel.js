@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
 
 let slideIndex = 0
 let slides = document.querySelectorAll('.slide');
-const TIME = 8000;
+const TIME = 10000;
 
 var prev = document.getElementById("prev")
 var next = document.getElementById("next")

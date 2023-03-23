@@ -7,7 +7,7 @@
 .gif2 {
     width: 400px;
     height: 275px;
-    border-radius: 15%;
+    border-radius: 5%;
 }
 
 .gif3 {
@@ -33,13 +33,13 @@
 
 .technic-description{
     width: 50%;
-    margin: 20px;
+    margin: 0px 20px 20px 20px;
 }
 
 h3
 {
     color: white;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 .technic-cero{
     text-align: end;
@@ -63,6 +63,7 @@ h3
         padding-right: 20px;
         text-align: justify;
     }
+
     .technic-cero{
         text-align: center;
     }

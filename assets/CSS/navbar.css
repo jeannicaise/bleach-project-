@@ -8,8 +8,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    color: #fff; 
-    
+
 } 
 
 html {
@@ -18,7 +17,7 @@ html {
 
 body {
     background-color: black;
-    color: #fff; 
+
     font-size: 1.2em;
     font-family: 'Signika Negative', sans-serif;
 }
@@ -45,6 +44,7 @@ body {
     margin: 20px;
     font-family: 'Dimbo', sans-serif;
     font-size: 2rem;
+    color: #fff;
   }
 
 .navbar ul li a:hover {
@@ -81,6 +81,11 @@ h1, h2 , footer{
 h1, h2 {
     font-size: 2.5rem;
     text-transform: uppercase;
+    color: #fff;
+}
+
+p{
+    color: #fff;
 }
 
 section {
@@ -101,6 +106,7 @@ footer {
     padding-left: 30px;
     margin-top: 20px;
     font-size: 1.5rem;
+    color: #fff;
 }
 
 #hiddenButton {

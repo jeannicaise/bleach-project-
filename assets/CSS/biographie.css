@@ -10,18 +10,18 @@
 
 }
 table{
+    border-collapse: collapse;
     border: 2px solid rgb(142, 142, 142);
 }
 
 caption {
     font-size: 1.4em;
     background-color: rgba(146, 146, 146, 0.591);
-    color: black;
+    color: white;
+    border: 2px solid rgba(146, 146, 146, 0.591);
 }
 
-thead {
-  
-}
+
 
 
 td {
@@ -48,7 +48,7 @@ td {
 
 thead td {
 margin-left: 50px;
-position: ;
+
 
 }
 
@@ -59,6 +59,7 @@ position: ;
 
 .Biography-description {
     margin-left: 30px;
+
 }
 
 @media screen and (max-width:400px){
@@ -67,5 +68,22 @@ position: ;
 
         display: flex;
         flex-direction: column;
+        gap: 30px;
+        align-items: center; 
+        
     }
+    .Biography-description
+    {
+        margin-left: 0px;
+        text-align: justify;
+    }
+    .pHidden
+    { display: none;}
+
+    #bio
+    {
+        height: 75rem;
+    }
+
+    
 }

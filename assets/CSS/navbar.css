@@ -114,7 +114,6 @@ footer {
     border-radius: 50%;
     border: solid #7E161A;    
     background-color: black;
-    color: white;
     font-family: 'Dimbo', sans-serif;
     font-size: 2rem;
     font-weight: bolder;
@@ -124,6 +123,7 @@ footer {
     position: fixed;
     right: 80px;
     bottom: 80px;
+    
 }
 
 
@@ -133,6 +133,11 @@ footer {
 
 #hiddenButton:hover {
     transform: translateY(-10px);
+}
+
+#hiddenButton a {
+    color: white;
+
 }
 
 
@@ -204,6 +209,22 @@ footer {
         background-size: cover;
         margin-bottom: 20px;
     }
+    h1,h2,h3
+    {
+        text-align: center;
+        /* padding-top: 50px; */
+    }
+    h1{
+        padding-bottom: 20px;
+    }
+    #home{
+        padding: 0 10px 0 10px;
+    }
+
+    section{
+        width: 100%;
+    }
+
 
     #hiddenButton {
         display: none;

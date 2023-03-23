@@ -31,6 +31,43 @@
     margin-bottom: 30px;
 }
 
-.techniques{
+.technic-description{
+    width: 50%;
+    margin: 20px;
+}
+
+h3
+{
+    color: white;
     margin-top: 20px;
+}
+.technic-cero{
+    text-align: end;
+}
+
+@media screen and (max-width:400px){
+    /* #technic{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    } */
+    .container1,.container2,.container3
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .technic-description{
+        width: 100%;
+        margin: 20px 40px 20px 20px;
+        padding-right: 20px;
+        text-align: justify;
+    }
+    .technic-cero{
+        text-align: center;
+    }
+    .container3
+    {
+        margin-top: 20px;
+    }
 }

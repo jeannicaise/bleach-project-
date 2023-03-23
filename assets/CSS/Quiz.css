@@ -104,11 +104,13 @@ label:hover   /* colore l'arrière plan quand la souris passe dessus */
 }
 #score
 {
-    font-weight: bold;
+    font-family: 'Signika Negative', sans-serif;
     font-size: 2rem;
     color: white;
+    background-color: rgb(17 16 16);
     box-shadow: 0 0 14px rgb(131, 8, 8);
     padding: 0 10px;
+
 }
 
 
@@ -120,6 +122,7 @@ label:hover   /* colore l'arrière plan quand la souris passe dessus */
     font-size: 2rem;
     box-shadow: 0 0 14px rgb(131, 8, 8);
     padding: 0 10px;
+    font-family: 'Signika Negative', sans-serif;
 }
 
 /* ----------------------Afficher resulat clik------------------------ */
